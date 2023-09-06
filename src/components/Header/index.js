@@ -4,6 +4,7 @@ import {Link, withRouter} from 'react-router-dom'
 
 const Header = props => {
   const {history} = props
+
   const onClickLogout = () => {
     Cookies.remove('jwt_token')
     history.replace('/login')
